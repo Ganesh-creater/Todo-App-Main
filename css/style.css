@@ -1,59 +1,124 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.attribution { font-size: 0.6875rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 body {
-    position: relative;
-    background: url(../images/bg-desktop-dark.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    background-color: hsl(235, 21%, 11%);
+  position: relative;
+  background: url(../images/bg-desktop-dark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(235, 21%, 11%);
+  font-family: "Josefin Sans", sans-serif;
 }
 .background-todo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    width: 100%;
-    height: 450px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  width: 100%;
+  height: 450px;
 }
 .header {
-    width: 40%;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 40%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header h1 {
-    color: #fff;
-    font-family: "Josefin Sans", sans-serif;
-    letter-spacing: 1rem;
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 700;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
 }
 .todo-app {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: inline-flex;
+  gap: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .todo-app .input-box .icon-btn {
-    padding: 20px;
+  padding: 20px;
+}
+.todo-container {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
 }
 .input-box {
-    background-color: hsl(235, 24%, 19%);
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 5px;
+  min-width: 100%; /* Need to change the width size based on the work */
+  box-shadow: 0 25px 50px -15px;
 }
 .input-box .input {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    padding: 15px 10px;
-    color: #fff;
-    font-size: 18px;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 15px 10px;
+  color: hsl(234, 39%, 85%);
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.icon-btn {
+  background-color: hsl(235, 24%, 19%);
+  outline: none;
+  border: none;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.list-container {
+  color: hsl(234, 39%, 85%);
+  font-size: 1.2rem;
+}
+.list-con {
+  background-color: hsl(235, 24%, 19%);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: hsl(237, 14%, 26%) 0.5px solid;
+}
+.list-con:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.list-con .icon-btn {
+  margin-right: 20px;
+  padding: 5px;
+}
+.list-con .icon-btn .btn-icon {
+  cursor: pointer;
+}
+.bottom-container {
+  padding: 25px;
+  background-color: hsl(235, 24%, 19%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(234, 39%, 85%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 25px 50px -15px black;
+}
+.list-tasks {
+  display: flex;
+  gap: 25px;
 }

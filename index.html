@@ -19,6 +19,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
@@ -36,16 +40,80 @@
       </div>
     </div>
     <div class="todo-app">
-      <div class="input-box">
-        <button class="icon-btn">
-          <i class="fa-thin fa-circle" style="color: rgb(97, 93, 93)"></i>
-        </button>
-        <input class="input" type="text" placeholder="Create a new todo..." />
-      </div>
-      <div class="list-container">
-        <ul>
-          <li></li>
-        </ul>
+      <div class="todo-container">
+        <div class="input-box">
+          <button class="icon-btn">
+            <i class="fa-regular fa-circle" style="color: rgb(70, 61, 61)"></i>
+          </button>
+          <input class="input" type="text" placeholder="Create a new todo..." />
+        </div>
+        <div class="list-container">
+          <div class="list-con">
+            <button class="icon-btn">
+              <i
+                class="fa-regular fa-circle btn-icon"
+                style="color: rgb(70, 61, 61)"
+              ></i>
+            </button>
+            <p>Complete online Javascript Course</p>
+          </div>
+          <div class="list-con">
+            <button class="icon-btn">
+              <i
+                class="fa-regular fa-circle btn-icon"
+                style="color: rgb(70, 61, 61)"
+              ></i>
+            </button>
+            <p>Jog around the park 3x</p>
+          </div>
+          <div class="list-con">
+            <button class="icon-btn">
+              <i
+                class="fa-regular fa-circle btn-icon"
+                style="color: rgb(70, 61, 61)"
+              ></i>
+            </button>
+            <p>10 Minutes mediation</p>
+          </div>
+          <div class="list-con">
+            <button class="icon-btn">
+              <i
+                class="fa-regular fa-circle btn-icon"
+                style="color: rgb(70, 61, 61)"
+              ></i>
+            </button>
+            <p>Read for 1 hour</p>
+          </div>
+          <div class="list-con">
+            <button class="icon-btn">
+              <i
+                class="fa-regular fa-circle btn-icon"
+                style="color: rgb(70, 61, 61)"
+              ></i>
+            </button>
+            <p>Pick up groceries</p>
+          </div>
+          <div class="list-con">
+            <button class="icon-btn">
+              <i
+                class="fa-regular fa-circle btn-icon"
+                style="color: rgb(70, 61, 61)"
+              ></i>
+            </button>
+            <p>Complete Todo App on Frontend Mentor</p>
+          </div>
+        </div>
+        <div class="bottom-container">
+          <div class="item-list">
+            <p><span>5</span> items left</p>
+          </div>
+          <div class="list-tasks">
+            <p>All</p>
+            <p>Active</p>
+            <p>Completed</p>
+          </div>
+          <div class="remove-container"><p>Clear Completed</p></div>
+        </div>
       </div>
     </div>
     <!-- <footer class="attribution">
